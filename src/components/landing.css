@@ -1,0 +1,282 @@
+.UpperDiv {
+    width: 100%;
+    height: 18%;
+    border-radius: 15px 0 0 0;
+    background-color: #c9c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LowerDiv {
+    width: 100%;
+    height: 78%;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+.user-container {
+    padding: 10px 18px 0 18px;
+}
+
+.user {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+}
+.Chatuser {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+}
+.Chatuser img {
+    width: 10%;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user img {
+    width: 10%;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+.sideBarContainer {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 40px 20px 0 20px;
+}
+
+.sideBar {
+    height: 100% !important;
+    width: 100%;
+}
+
+.flex-column {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    width: 80%;
+    border-bottom: 1px solid rgb(235, 232, 232);
+    color: #ffffff;
+    font-size: 20px;
+    transition: none;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+.colSidebar {
+    height: 90vh;
+    background-color: rgb(59, 59, 248);
+    border-radius: 20px;
+}
+
+.colRightBar {
+    padding-left: 30px;
+}
+
+.userLogo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.userLogo img {
+
+    width: 15%;
+    border-radius: 50%;
+}
+
+.navBar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+}
+
+.details-div{
+    padding: 40px 40px 0 40px;
+    height: 90%;
+}
+.leftDiv{
+    border-right: 0.5px solid rgb(77, 77, 77);
+}
+
+.personalDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(77, 77, 77);
+}
+.personalDetails img{
+    width: 50%;
+    border-radius: 50%;
+}
+.companyDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.comingSoon{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+}
+.comingSoon h1{
+    opacity: 0.1;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.userOverlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 13%;
+    right: 4%;
+    width: 20%;
+    height: 60%;
+    border-radius: 35px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .userOverlay img {
+    margin-top: 20px;
+    width: 30%;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .userOverlay-container{
+    height: 40%;
+    overflow-y: auto;
+  }
+  .overlayUser{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+  }
+  #userImg{
+    margin: 0 10px 0 0;
+    width: 10%;
+  }
+  .overlayUser span{
+    font-size: 14px;
+  }
+
+.userInfo button{
+    margin-top: 10px;
+    width: 40%;
+    border-radius: 30px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(231, 69, 69);
+}
+
+
+
+.chatContainer {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 18%;
+    height: 50%;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+  }
+  
+  .chatContainer.open {
+    transform: translateY(0);
+  }
+  
+  .chatButton {
+    background-color: #007bff;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .chatIcon {
+    margin-right: 10px;
+    font-size: 1.2em; 
+  }
+  .toggleIcon {
+    margin-left: 10px;
+    font-size: 0.8em; 
+  }
+  
+  .userList {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .statusDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .statusDot.online {
+    background-color: #00ff00; 
+  }
+  
+  .statusDot.offline {
+    background-color: #ccc; 
+  }
+  
