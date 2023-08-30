@@ -1,14 +1,13 @@
 import React from 'react'
 import { Row, Col } from "react-bootstrap";
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
-import ChatComponent from '../ChatComponent';
 
 const containerStyle = {
     width: '400px',
     height: '300px',
 };
 
-const ProfileDetails = ({ user ,usersData}) => {
+const ProfileDetails = ({ user}) => {
     const center = {
         lat: parseFloat(user.address.geo.lat) ,
         lng: parseFloat(user.address.geo.lng) ,
@@ -76,9 +75,7 @@ const ProfileDetails = ({ user ,usersData}) => {
                         <div style={{display:"flex",gap:"15px"}}><p>lat: {center.lat}</p> <p>long: {center.lng}</p> </div>
                     </div>
 
-                    <div>
-                        <ChatComponent users={usersData}/>
-                    </div>
+                    
                 </Col>
             </Row>
         </div>

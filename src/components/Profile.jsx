@@ -7,6 +7,7 @@ import ToDo from './pages/ToDo';
 import "./landing.css"
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import UserOverlay from './UserOverlay';
+import ChatComponent from './ChatComponent';
 
 
 const Profile = () => {
@@ -17,13 +18,13 @@ const Profile = () => {
 
     const [showOverlay, setShowOverlay] = useState(false);
 
-  const handleLogoClick = () => {
-    setShowOverlay(!showOverlay);
-  };
+    const handleLogoClick = () => {
+        setShowOverlay(!showOverlay);
+    };
 
-  const handleLogout = () => {
-    navigate("/")
-  };
+    const handleLogout = () => {
+        navigate("/")
+    };
 
     const handleNavClick = (page) => {
         setCurrentPage(page);
@@ -74,10 +75,13 @@ const Profile = () => {
                                         <UserOverlay data={data} userData={userData} handleLogout={handleLogout} />
                                     )}
                                 </div>
-                                {currentPage === "Profile" && <ProfileDetails user={data} usersData={userData}/>}
+                                {currentPage === "Profile" && <ProfileDetails user={data} usersData={userData} />}
                                 {currentPage === "Posts" && <Posts />}
                                 {currentPage === "Gallery" && <Gallery />}
                                 {currentPage === "Todo" && <ToDo />}
+                                <div>
+                                    <ChatComponent users={userData} />
+                                </div>
                             </Col>
                         </Row>
                     </Container>
